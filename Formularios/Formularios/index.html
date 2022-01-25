@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UFT-8"/>
+		<title>Formularios</title>
+	</head>
+	
+	<body>
+		<h1>Teoría de Formularios</h1>
+		
+		<!--Los formularios van con 'form'
+		Con el atributo 'action' lo mandamos a una página
+		Con method="get" se envía la info
+		CUIDADO CONTRASEÑAS, si no, post
+		Los input se cierran en la misma etiqueta y llevan atributos
+		Son elementos de línea
+		
+		Variable text se escribe
+		Variable submit lo envía
+		
+		Para titulillo, <label="">
+		Con el for, selecciona algo
+		Para pinchar y te mande a un id para escribir directamente for=""
+		Para escribir algo fijo, value=""
+		Para letras grisecillas placeholder=""
+		Para tamaño size=""
+		Límite caracteres maxlength=""
+		Para que el campo nunca se mande vacío 'required'
+		-->
+		
+		<form action="prueba.html" method="get">
+		
+			<p>
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="Variable1" id="nombre" value="" 
+				placeholder="Teclee su nombre" size="50" maxlength="15" required/>
+			</p>
+			
+			
+			<p>
+				<label for="clave">Contraseña:</label>
+				<input type="password" name="contraseña" id="clave" placeholder="Teclee su contraseña">
+			</p>
+			
+			
+			<p>
+				<input type="checkbox" name="acepto" id="acepto" checked/>
+				<label for="acepto">Acepto las condiciones</label> 
+			</p>
+			
+			
+			<p><label>Sexo</label></p>
+			
+			
+			<p>
+				<input type="radio" name="sexo" id="hombre">
+				<label for="hombre">Hombre</label></br>
+				
+				<input type="radio" name="sexo" id="hombre">
+				<label for="hombre">Mujer</label>
+			</p>
+			
+			
+			<p><input type="submit" name="Variable2" value="Enviar"/></p>
+			
+			
+		
+		</form>
+	</body>
+</html>

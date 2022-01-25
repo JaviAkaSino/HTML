@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Información sobre el producto</title>
+		<link href="../images/opera.png" rel="shortcut icon">
+	</head>
+
+	<body>
+		<h3>Información sobre el producto</h3>
+	
+		<form action="php/insertar_cv.php" method="post" enctype="multipart/form-data">
+	
+		<fieldset>
+		<legend>Datos básicos</legend>
+		
+		<p>
+			<label for="nombre">Nombre</label>
+			<br/>
+			<input type="text" name="nombre" id="nombre" size="35"/>
+		</p>
+		
+		<p>
+			<label for="descripcion">Descripción</label>
+			<br/>
+			<textarea name="descripcion" id="descripcion" cols="35" rows="5"></textarea>
+		</p>
+		
+		<p>
+			<label for="foto">Foto</label>
+			<input type="file" name="foto" id="foto" accept="image/*">
+		</p>
+			
+		<p>
+			<input type="checkbox" name="contador" id="contador"/>
+			<label for="contador">Añadir contador de visitas</label>
+		</p>
+		
+		</fieldset>
+		
+		<fieldset>
+		<legend>Datos económicos</legend>
+		
+		<p>
+			<label for="precio">Precio</label>
+			<input type="text" name="precio" id="precio" size="4"/>
+			<label for="precio">€</label>
+			
+			
+			
+			<label for="impuestos">Impuestos</label>
+			<select id="impuestos">
+				<option value="4%">4%</option>
+				<option value="7%">7%</option>
+				<option value="16%">16%</option>
+				<option value="25%">25%</option>
+			</select>
+		</p>
+		
+		<p>	
+			<label>Promoción</label>
+			<br/>
+			<input type="radio" name="promocion" value="ninguno" id="ninguno" checked>
+			<label for="ninguno">Ninguno</label>
+			<br/>
+			<input type="radio" name="promocion" id="transporte"" value="transporte"/>
+			<label for="transporte">Transporte gratuito</label>
+			<br/>
+			<input type="radio" name="promocion" id="descuento" value="descuento"/>
+			<label for="descuento">Descuento 5%</label>
+		</p>
+		</fieldset>
+		
+		</form>
+	
+	</body>
+</html>

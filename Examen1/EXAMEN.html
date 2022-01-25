@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Título con 'title'</title>
+		<meta charset="UTF-8"/>
+		<link href="favicon.png" rel="shortcut icon"/>
+	</head>
+	
+	<body>
+		<h1 id="id">Formateo de texto</h1>
+		<p>
+			<strong>Las negritas con 'strong'</strong>
+			<br/>
+			<em>Las cursivas con 'em'</em>
+			<br/>
+			<del>Tachadas con 'del'</del>
+			<br/>
+			<ins>Subrayadas con 'ins'</ins>
+			<br/>
+			<br/>
+			<h3>Entidades</h3>
+			Espacio nbsp
+			<br/>
+			Less Than, Greater Than &lt; &gt;
+			<br/>
+			El C &copy; es 'copy;'
+			<br/>
+			El R &reg; es 'reg;'
+			<br/>
+			El TM &trade; es 'trade;'
+			<br/>
+			ñ es ntilde; &ntilde;
+			<br/>
+			Las tildes con xacute; &eacute;
+			<br/>
+			Las tildes franchus xgrave; &ugrave;
+			<br/>
+			<br/>
+			Las <abbr title="Abreviaturas">abreviaturas</abbr> van con 'abbr title='
+			<br/>
+			Los <acronym title="Acrónimos">acrónimos</acronym> van con 'acronym title='
+			<br/>
+			Las <dfn title="Definición">deficiciones</dfn> con 'dfn title='
+			
+			<blockquote cite="">Bloque. Se añade sangría para citar con 'blockquote cite="url"'</blockquote>
+			El nombre de una <cite>Obra Creativa</cite> va con 'cite'
+			
+			<pre>Bloque. Podemos poner cosas de programación con 'pre' </pre>
+
+			Y tremendo rayote con 'hr'
+			<br/>
+			<hr/>
+		</p>
+		
+		<p>
+			<h1>Listas</h1>
+			<h3>Unordered List</h3>
+				<ul>
+					<li>ul para la lista y li para lo listado</li>
+				</ul>
+			<h3>Ordered List</h3>
+				<ol>
+					<li>Igual pero ol</li>
+				</ol>
+			<h3>Definition List</h3>
+				<dl>
+					<dt>Definition Term</dt>
+					<dd>Definition Definition</dd>
+				</dl>
+				<br/>
+				<hr/>
+			</p>
+		
+			<h1>Enlaces</h1>
+			<p>
+				<a href="">Enlaces con 'a href='</a>
+				<br/><br/>
+				<a href="#id">Saltos a sitios con href="#id" y dandole id al sitio</a>
+				<br/><br/>
+				<a href="EXAMEN.html#id"> Juntamos los dos para ir a web en salto 'url#id'</a>
+				<br/><br/>
+				Imagen con img src="" alt="" title="" height="" width""
+				<img src="favicon.png" alt="Patxi" title="Patxi" width="100"/>
+				<br/>
+			</p>
+			
+			<h1>Tablas</h1>
+			<p>
+				<table border="1">
+				
+					<caption>Tabla 'table border="1" summary="def"'. Título 'caption'</caption>
+				
+					<tr>
+						<th scope="col">Titulitos de columna</th>
+						<th scope="col">Van con 'th scope="col"'</th>
+					</tr>
+					<tr>
+						<th scope="row">En filas '="row"'</th>
+						<td>Normales con 'td'</td>
+					</tr>
+				</table>
+			</p>
+			<h1>Formularios</h1>
+			<h3>enctype="multipart/form-data" para imágenes</h3>
+			<form action="EXAMEN.html" method="post" enctype="multipart/form-data">
+			
+			<fieldset>
+				<legend>Titulín con legend, fieldset pa los rayotes flama</legend>
+				
+			<p>
+				<label for="foto">Foto con type="file" accept="image/*"</label>
+				<input type="file" name="foto" id="foto" accept="image/*">
+			</p>
+				
+				<label for="ejemplo">Ejemplo</label>
+				<input type="text" size="30" placeholder="Placeholder" id="ejemplo"/>
+				<label for="contra">Contraseña:</label>
+				<input type="password" id="contra" value="contraseña"/>
+				<input type="hidden" name="enviar" value="Esto te lo llevas puesto"/>
+				<br/>
+				<textarea rows="5" cols="6">Enmedio esto</textarea>
+				<br/>
+				<select name="pueblo" id="pueblo">
+					<optgroup label="Costa del Sol Occidental">
+						<option value="Estepona">Estepona</option>
+						<option value="Marbella">Marbella</option>
+					</optgroup>
+					<optgroup label="Costa del Sol Oriental">	
+						<option value="Málaga" selected>Málaga</option>
+						<option value="Fuengirola">Fuengirola</option>
+					</optgroup>	
+				</select>
+				<br/>
+				<select name="estudio" id="estudio" required>
+					<option selected disabled="disabled">
+					<option value="eso">Educación Secundaria Obligatoria</option>
+					<option value="bachiller">Bachillerato</option>
+					<option value="grado/fp">Grado ó Formación Profesional</option>
+				</select>
+				<br/>
+				<label for="promocion">Promoción</label>
+				<br/>
+				<input type="radio" name="promocion" value="ninguno" id="ninguno" checked>
+				<label for="ninguno">Ninguno</label>
+				<br/>
+				<input type="radio" name="promocion" id="transporte"" value="transporte"/>
+				<label for="transporte">Transporte gratuito</label>
+				<br/>
+				<input type="radio" name="promocion" id="descuento" value="descuento"/>
+				<label for="descuento">Descuento 5%</label>
+				
+			</fieldset>
+			
+			<p align="right">
+			<input type="reset" value="Borrar todo"/>
+			<input type="submit" value="Comprobar"/>
+			</form>
+	</body>
+</html>

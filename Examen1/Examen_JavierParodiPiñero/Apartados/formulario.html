@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Formulario de registro - Mi web</title>
+		<meta charset="UTF-8"/>
+		<link href="../Images/favicon.jpg" rel="shortcut icon"/>
+	</head>
+	
+	<body>
+		<h1>Formulario</h1>
+		
+		<form action="../Principal/index.html" method="get" enctype="multipart/form-data">
+		<fieldset>
+		<legend>Completar</legend>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" maxlength="50"/>
+			<br/>
+			<label for="apellidos">Apellidos:</label>
+	lang="es"		<input type="text" id="apellidos" name="apellidos" maxlength="50"/>
+			<br/>
+			<label for="contraseña">Contraseña:</label>
+			<input type="password" id="contraseña" name="contraseña" maxlength="50"/>
+		<p>
+			<input type="checkbox" name="lengua" id="lengua">
+			<label for="lengua">Lengua</label>
+			<input type="checkbox" name="matematicas" id="matematicas">
+			<label for="matematicas">Matemáticas</label>
+			<input type="checkbox" name="historia" id="historia">
+			<label for="historia">Historia</label>
+			<input type="checkbox" name="geografia" id="geografia">
+			<label for="geografia">Geografía</label>
+			<br/>
+			<label for="fichero">Elija un fichero:</label>
+			<input type="file" name="fichero" id="fichero"/>
+			<br/>
+			<textarea name="texto" placeholder="Utilice este cuadro para escribir" id="texto" maxlength="50" rows="4" cols="50"></textarea>
+			<br/>
+			<input type="radio" name="tipo" value="jpg" id="jpg"/>
+			<label for="jpg">JPG</label>
+			<input type="radio" name="tipo" value="png" id="png" checked/>
+			<label for="png">PNG</label>
+		</p>
+		<label for="puerto">Seleccione un Puerto de Comunicaciones:</label>
+		<br/>
+		<select name="puerto" id="puerto" size="3">
+			<option>USB</option>
+			<option>Paralelo</option>
+			<option selected>PS2</option>
+			<option>Serie</option>
+		</select>
+		</fieldset>
+		<p align="right">
+		<input type="submit" name="enviar" value="Enviar"/>
+		<input type="reset" name="borrar" value="Borrar todo"/>
+		</p>
+		</form>
+	</body>
+</html>
